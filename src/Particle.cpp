@@ -12,7 +12,7 @@ void Particle::update() {
     
     
     // Update the velocity based on the acceleration.
-    velocity += acceleration;
+    //velocity += acceleration;
     
     //    is SAME AS:
     
@@ -22,7 +22,7 @@ void Particle::update() {
     
     
     // Update the position based on the velocity.
-    position += velocity;
+    //position += velocity;
     
     // is SAME AS:
     //    x = x + vx;
@@ -34,5 +34,6 @@ void Particle::update() {
 
 
 void Particle::draw() {
+    ofSetColor(ofColor::white);
     ofDrawCircle(position, radius);
 }

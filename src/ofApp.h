@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "Particle.h"
+#include "Background.h"
 
 class ofApp : public ofBaseApp{
 
@@ -13,5 +14,6 @@ class ofApp : public ofBaseApp{
 		void mousePressed(int x, int y, int button);
     
     Particle p;
+    Background b;
 		
 };
