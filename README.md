@@ -1,3 +1,3 @@
 # ballClicker
 
-This is a quick template for ball-clicker game.
+This is work-in=progress of Ball Clicker Game.
