@@ -15,5 +15,5 @@ class ofApp : public ofBaseApp{
     
     Particle p;
     Background b;
-		
+    ofImage sky;
 };

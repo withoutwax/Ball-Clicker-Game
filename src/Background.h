@@ -7,6 +7,7 @@ class Background {
     
 public:
     // Update the position, velocity and acceleration
+    void setup();
     void update();
     
     // Will render the particle on the screen
@@ -28,6 +29,6 @@ public:
     uint64_t age;
     
     float radius = 30;
-    
+    ofImage sky;
 };
 

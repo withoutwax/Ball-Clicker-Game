@@ -1,5 +1,8 @@
 #include "Background.h"
 
+void Background::setup() {
+    
+}
 
 
 void Background::update() {
@@ -41,6 +44,8 @@ void Background::draw() {
     
     xPos = ofRandom(ofGetWidth());
     yPos = ofRandom(ofGetHeight());
+    
+    sky.draw(position.x, position.y);
     
     for (int i = 0; i < 30; i++) {
         ofDrawRectangle(position.x*i, position.y, 10, 10);
