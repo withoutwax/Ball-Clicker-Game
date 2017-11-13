@@ -44,6 +44,10 @@ void ofApp::update(){
     
     if (p.position.x > b.position.x+(ofGetWidth()/2)-50 && p.position.x < b.position.x+(ofGetWidth()/2)+50 && p.position.y > b.position.y-50 &&  p.position.y < b.position.y+50) {
         bounce();
+    } else if (p.position.x > b.position.x+(ofGetWidth()/2)+150-50 && p.position.x < b.position.x+(ofGetWidth()/2)+150+50 && p.position.y > b.position.y-250-50 &&  p.position.y < b.position.y-250+50) {
+        bounce();
+    } else if (p.position.x > b.position.x+(ofGetWidth()/2)-150-50 && p.position.x < b.position.x+(ofGetWidth()/2)-150+50 && p.position.y > b.position.y-500-50 &&  p.position.y < b.position.y-500+50) {
+        bounce();
     }
     
 }
@@ -56,6 +60,8 @@ void ofApp::draw(){
 //    c.draw();
     
     ofDrawCircle(b.position.x+(ofGetWidth()/2), b.position.y, 50);
+    ofDrawCircle(b.position.x+(ofGetWidth()/2)+150, b.position.y-250, 50);
+    ofDrawCircle(b.position.x+(ofGetWidth()/2)-150, b.position.y-500, 50);
     
 }
 
