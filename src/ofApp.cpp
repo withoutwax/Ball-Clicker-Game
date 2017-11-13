@@ -28,6 +28,20 @@ void ofApp::update(){
 //    int testX = b.position.x+(ofGetWidth()/2);
 //    int testY = b.position.y;
     
+    
+    // Ball hit - coin X Position
+    //Particle.position.x > coin.position.x(-50 radius) &&
+    //Particle.position.x < coin.position.x(+50 radius) &&
+    
+    // Ball hit - coin Y Position
+    //Particle.position.y > coin.position.y(-50 radius) &&
+    //Particle.position.y < coin.position.y(+50 radius)
+    
+    
+    // 01 Need to create an ArrayList (ofVec2f) to store the coins.
+    // 02 Need to make coins disappear when hit/eaten/collected.
+    // 03 Need to generate random coins as the user moves up.
+    
     if (p.position.x > b.position.x+(ofGetWidth()/2)-50 && p.position.x < b.position.x+(ofGetWidth()/2)+50 && p.position.y > b.position.y-50 &&  p.position.y < b.position.y+50) {
         bounce();
     }
