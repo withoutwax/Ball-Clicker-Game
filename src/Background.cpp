@@ -37,18 +37,5 @@ void Background::update() {
 
 
 void Background::draw() {
-    int xPos, yPos;
-    
-    ofSetColor(ofColor::black);
-    ofDrawRectangle(position.x + 100, position.y + 200, 10, 10);
-    
-    xPos = ofRandom(ofGetWidth());
-    yPos = ofRandom(ofGetHeight());
-    
-    sky.draw(position.x, position.y);
-    
-    for (int i = 0; i < 30; i++) {
-        ofDrawRectangle(position.x*i, position.y, 10, 10);
-    }
     
 }

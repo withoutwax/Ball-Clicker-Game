@@ -29,6 +29,5 @@ public:
     uint64_t age;
     
     float radius = 30;
-    ofImage sky;
 };
 
